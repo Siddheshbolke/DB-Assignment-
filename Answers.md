@@ -5,6 +5,7 @@ The relationship between the "Product" and "Product_Category" entities typically
 
 
 
+
 2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
  
 Ans:-
@@ -17,6 +18,8 @@ productSchema.pre('save', async function(next) {
     }
     next();
 });
+
+
 
 
 3. Create schema in any Database script or any ORM (Object Relational Mapping).
