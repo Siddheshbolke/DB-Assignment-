@@ -8,7 +8,6 @@ The relationship between the "Product" and "Product_Category" entities typically
 2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
  
 Ans:-
-
 // Pre-save hook to validate category before saving a product
 
 productSchema.pre('save', async function(next) {
@@ -23,7 +22,6 @@ productSchema.pre('save', async function(next) {
 3. Create schema in any Database script or any ORM (Object Relational Mapping).
 
 Ans:-
-
 const mongoose = require('mongoose');
 
 // Define schema for Product
